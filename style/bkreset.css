@@ -1,0 +1,310 @@
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0; padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline: none; border:none;}
+textarea{resize: none;}
+a{text-decoration:none; color:#656565;}
+
+/*清除浮动*/
+.clearfix:after{content:"";display:block; clear:both;}
+.clearfix{zoom:1;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+nav{
+	background-color: transparent;
+	height: 50px;		
+}
+
+.logo{	
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;  /*字母间距*/
+}
+
+nav ul li, .logo {
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 5px;
+	margin-right: 10px;
+	
+}
+
+.active{
+	color: #000;
+	border-bottom: #000 solid 2px;
+}
+
+
+
+/*文字链接附近也有hover效果*/
+nav ul li a{
+	display: inline-block;
+	height:inherit;   
+	/* a行内元素 高度继承父级元素*/
+}
+
+nav ul li a:hover{
+	border-bottom: #FFF solid 2px;
+	color: #fff;
+}
+
+#banner{
+	background: transparent;
+	height: 700px;
+	color: #fff;
+	
+}
+
+.article #banner{
+	height: 300px;
+}
+
+#banner .inner{	
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	position:relative;
+	top: 140px;
+
+}
+
+.article #banner .inner{
+	top: 60px;
+}
+
+.article-content{
+	background: rgba(255,255,255,0.4);
+	padding: 30px 0 50px;
+}
+
+.info{
+	font-size: 14px;
+	color: #000;
+	padding: 20px 0;
+}
+
+article{
+	line-height: 32px;
+	font-size: 18px;
+	
+}
+
+.sub-heading{
+	line-height: 32px;
+	padding: 10px 0;
+	font-size: 14px;	
+}
+
+.second{
+	font-size: 16px;
+	padding: 10px 0;
+}
+
+button{
+	border: none;
+	border-radius: 6px;
+	background: #333;
+	color: #eee;
+	padding: 7px;
+}
+
+#banner .inner .more{
+	margin-top: 280px;
+}
+
+.section1{
+	background-color:#089db0;
+	color: #fff;
+	text-align: center;	
+	padding: 100px 0;
+}
+
+.wrapper{
+	max-width:1080px;
+	margin: 0 auto;
+}
+
+.hr{
+	width: 100%;
+	margin:20px auto;
+	
+}
+
+.section1 .hr{
+	width: 60%;
+	border-top:#0B8E9E solid 2px;
+}
+
+.icon-grounp{
+	margin: 30px 0;
+
+}
+
+.icon-grounp .icon{
+	/*span行内元素不能设置高度 转换成内联块*/
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color:#0B8E9E;
+	margin: 0 30px;
+	transform:rotate(45deg);
+}
+
+
+.section2{
+	background: #352A30;
+	color: #fff;
+}
+.section2:nth-child(even){
+	background-color: 
+	rgba(53,42,48,0.9);
+}
+
+.pic-section{
+	width: 45%;
+}
+
+.pic-section img{
+	width: 100%;
+}
+
+.text-section{
+	width: 55%;
+	position: relative;
+	top: 50px;
+	left: 30px;
+}
+
+.text-section p{
+	width: 90%;
+}
+
+.section3{
+	background: #F9C2F9;
+	color: #fff;
+	padding:80px;
+	
+}
+
+.header-wrapper{
+	text-align: center;
+}
+
+.header-wrapper .hr{
+	border: #8A6A8A solid 1px;
+	width: 60%;
+}
+
+.card-grounp .card{		
+	width: 50%;	
+	float: left;
+	padding: 50px;
+	box-sizing :border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	/*border: 1px solid red;*/
+}
+
+.card:first-child{
+    background: rgba(0,0,0,0.04);
+}
+
+.card:nth-child(2){
+    background: rgba(0,0,0,0.08);
+}
+
+.card:nth-child(3){
+    background: rgba(0,0,0,0.12);
+}
+
+.card:nth-child(4){
+    background: rgba(0,0,0,0.16);
+}
+
+.card:nth-child(5){
+    background: rgba(0,0,0,0.20);
+}
+
+.card:nth-child(6){
+    background: rgba(0,0,0,0.24);
+}
+
+footer{
+	background: #333;
+	color: #fff;
+	min-height: 200px;
+	text-align: center;
+}
+
+.share {
+	padding: 45px;
+}
+
+
+
+.share li{
+	display: inline-block;
+	padding: 10px;
+}
+
+/*li元素点击附近hover效果*/
+.share li a{
+	display: inline-block;
+	line-height: 32px;
+	color: #fff;
+}
+
+.share li a:hover{
+	color: #8A6A8A;
+	text-decoration: underline;
+}
+
+.main-wrapper{
+	background: url(../images/sreen.jpg) top left no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.mask{
+	display: none;
+	background: rgba(255,255,255,0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#sidebar{
+	/*display: none;*/
+	background: #333;
+	width: 300px;  /*菜单栏从右侧滑出效果*/
+	position: fixed;
+	top: 0;
+	right: -300px;
+	bottom: 0;  /*div bottom也贴上来了*/
+}
+
+#sidebar a{
+	display: inline-block;
+	padding: 10px;	
+	color: #fff;
+}
+
+#sidebar a:hover{
+	background: #444;
+	display: block;
+}
+
+.back-to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: #999;
+	color: #fff;
+	border: #fff solid 1px;
+}
